@@ -1,11 +1,10 @@
-const submit = document.querySelector("#FormSubmit");
 let userInput = document.querySelector("#userInput");
+let list = document.querySelector("#list");
+let listItem = document.createElement("li");
 
-const addList = event => {
+const addItemHandler = event => {
   event.preventDefault();
 
-  let list = document.querySelector("#list");
-  let listItem = document.createElement("li");
   if (userInput.value.trim() === "") {
     return;
   } else {
