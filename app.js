@@ -12,4 +12,7 @@ const addItemHandler = event => {
     listItem.textContent = userInput.value;
     list.append(listItem);
   }
+  listItem.addEventListener("click", deleteMovieHandler);
 };
+
+const deleteMovieHandler = e => e.target.remove();

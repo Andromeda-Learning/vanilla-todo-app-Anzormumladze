@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <form onsubmit="addItemHandler(event)">
       <input type="text" id="userInput" />
       <button id="FormSubmit">Submit</button>
     </form>
-    <ul id="list"><ff/ul>
+    <div class="inline-styles">
+      <ul id="list"></ul>
+      <!-- <button class="show-btn" id="delete">Delete</button> -->
+    </div>
   </body>
 </html>
