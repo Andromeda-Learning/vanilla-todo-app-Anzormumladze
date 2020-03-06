@@ -1,6 +1,4 @@
 let userInput = document.querySelector("#userInput");
-let list = document.querySelector("#list");
-let listItem = document.createElement("li");
 
 const addItemHandler = event => {
   event.preventDefault();
