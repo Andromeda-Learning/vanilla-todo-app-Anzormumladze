@@ -3,8 +3,8 @@ let userInput = document.querySelector("#userInput");
 const addItemHandler = event => {
   event.preventDefault();
 
-  let list = document.querySelector("#list");
-  let listItem = document.createElement("li");
+  const list = document.querySelector("#list");
+  const listItem = document.createElement("li");
   const buttonDELETE = document.createElement("button");
 
   if (userInput.value.trim() === "") {
