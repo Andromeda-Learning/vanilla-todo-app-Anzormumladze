@@ -5,19 +5,20 @@ const addItemHandler = event => {
 
   let list = document.querySelector("#list");
   let listItem = document.createElement("li");
+  const buttonDELETE = document.createElement("button");
 
   if (userInput.value.trim() === "") {
     alert("შეიყვანე რამე");
   } else {
     listItem.textContent = userInput.value;
+    buttonDELETE.textContent = "DELETE";
+    listItem.append(buttonDELETE);
     list.append(listItem);
   }
-  //   listItem.addEventListener("click", deleteMovieHandler);
-  listItem.addEventListener("click", nameChangerHandler);
+
+  buttonDELETE.addEventListener("click", deleteMovieHandler);
 };
 
-// const deleteMovieHandler = e => e.target.remove();
-
-const nameChangerHandler = e => {
-  e.target.textContent = prompt("Sheiyvane axali saxeli");
+const deleteMovieHandler = e => {
+  e.target.parentNode.remove();
 };
