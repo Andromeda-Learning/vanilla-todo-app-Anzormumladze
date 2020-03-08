@@ -12,7 +12,12 @@ const addItemHandler = event => {
     listItem.textContent = userInput.value;
     list.append(listItem);
   }
-  listItem.addEventListener("click", deleteMovieHandler);
+  //   listItem.addEventListener("click", deleteMovieHandler);
+  listItem.addEventListener("click", nameChangerHandler);
 };
 
-const deleteMovieHandler = e => e.target.remove();
+// const deleteMovieHandler = e => e.target.remove();
+
+const nameChangerHandler = e => {
+  e.target.textContent = prompt("Sheiyvane axali saxeli");
+};
