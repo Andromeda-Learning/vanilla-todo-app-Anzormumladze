@@ -7,6 +7,7 @@ const addItemHandler = event => {
   const listItem = document.createElement("li");
   const buttonDELETE = document.createElement("button");
   const buttonEDIT = document.createElement("button");
+
   if (userInput.value.trim() === "") {
     alert("შეიყვანე რამე");
   } else {
