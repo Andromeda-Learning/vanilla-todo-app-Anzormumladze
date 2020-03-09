@@ -15,10 +15,11 @@ const addItemHandler = event => {
     buttonEDIT.textContent = "EDIT";
     buttonDELETE.textContent = "DELETE";
     listItem.append(buttonDELETE);
+    listItem.append(buttonEDIT);
     list.append(listItem);
   }
 
-  buttonEDIT.addEventListener("click", renameItemHander);
+  buttonEDIT.addEventListener("click", renameItemHandler);
   buttonDELETE.addEventListener("click", deleteMovieHandler);
 };
 
