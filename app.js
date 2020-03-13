@@ -28,7 +28,6 @@ const deleteMovieHandler = e => {
 };
 
 const renameItemHandler = e => {
-  console.log(e.target.parentNode);
   if (e.target && e.target.nodeName === "BUTTON") {
     e.target.parentNode.firstChild.textContent = prompt("change items name");
   }
