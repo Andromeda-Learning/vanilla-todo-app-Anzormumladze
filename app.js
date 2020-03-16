@@ -28,6 +28,5 @@ const deleteMovieHandler = e => {
 };
 
 const renameItemHandler = e => {
-  console.log(e.target.parentNode);
   e.target.parentNode.firstChild.textContent = prompt("change items name");
 };
